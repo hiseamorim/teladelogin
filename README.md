@@ -17,7 +17,7 @@
 ![imagem](imglogin/imglogin.png)
 
 ## Status do Projeto🚧
-> :finished: Projeto Finalizado :finished:
+> :👍: Projeto Finalizado :👍:
 
 ## 📋Descrição
 Projeto desenvolvido para disciplina de Programação Web I. Fizemos um Formulário de cadastro para simular o cadastro de usuários para permitir acesso a um site específico
