@@ -27,8 +27,8 @@ Projeto desenvolvido para disciplina de Programação Web I. Fizemos um Formulá
 - `Funcionalidade 2`: Cadastra os usuários para que acessem um sistema específico
 
 ### 🛠️ Tecnologia ultilizadas
-- ``HTML``
-- ``CSS``
+- ``HTML 5``
+- ``CSS 3``
 - ``JAVASCRIPT``
 
 ## ✒️ Autores
