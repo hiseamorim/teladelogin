@@ -14,50 +14,80 @@
     <div id="login">
         <form>
             <h1>Cadastre-se</h1>
-            <label>Nome completo</label><br>
-            <input type="name" id="nome" autocomplete="off"><br>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputZip" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome">
+                  </div>
 
-            <label>Telefone</label><br>
-            <input type="number" id="fone" autocomplete="off"><br>
+                <div class="col-md-6">
+                    <label for="inputZip" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="fone">
+                </div>
 
-            <label>Data de nascimento</label><br>
-            <input type="date" id="data" autocomplete="off"><br>
+                <div class="col-md-6">
+                        <label for="inputZip" class="form-label">Data de nascimento</label>
+                        <input type="date" class="form-control" id="data">
+                    </div>
 
-            <label>CPF</label><br>
-            <input type="text" id="cpf" autocomplete="off"><br>
+                <div class="col-md-6">
+                        <label for="inputZip" class="form-label">CPF</label>
+                        <input type="text" class="form-control" id="cpf">
+                    </div>
+            
+                <div class="col-md-6">
+                        <label for="inputZip" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
 
-            <label>Email</label><br>
-            <input type="email" id="email" autocomplete="off"><br>
+                <div class="col-md-6">
+                        <label for="inputZip" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senha">
+                    </div>
+                
+                 <div class="col-md-6">
+                        <label for="inputZip" class="form-label">Confirme a senha</label>
+                        <input type="password" class="form-control" id="senha2">
+                    </div>
+            
+                <div class="col-8">
+                        <label for="inputAddress" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="rua" placeholder="Joaquim Nabuco">
+                    </div>
 
-            <label for="">Senha</label><br>
-            <input type="password" id="senha" autcomplete="off"><br>
+                <div class="col-4">
+                        <label for="inputAddress" class="form-label">Número</label>
+                        <input type="text" class="form-control" id="numero" placeholder="1234">
+                    </div>
 
-            <label for="">Confirme a senha</label><br>
-            <input type="password" id="senha2" autcomplete="off"><br>
+                <div class="col-md-6">
+                    <label for="inputZip" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep">
+                  </div>
 
+                <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Complemento</label>
+                    <input type="text" class="form-control" id="complement">
+                  </div>
 
-            <h4>Endereço</h4>
-            <label>Endereço</label><br>
-            <input type="text" id="adress" autocomplete="off"><br>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+              </div>
 
-            <label>Número</label><br>
-            <input type="number" id="numero" autocomplete="off"><br>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="cidade">
+              </div>
 
-            <label>CEP</label><br>
-            <input type="number" id="cep" autocomplete="off"><br>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <input id="estado" class="form-control">
+              </div>
 
-            <label>Complemento</label><br>
-            <input type="text" id="complement" autocomplete="off"><br>
-
-            <label>Bairro</label><br>
-            <input type="text" id="adress2" autocomplete="off"><br>
-
-            <label>Cidade</label><br>
-            <input type="text" id="city" autocomplete="off"><br>
-
-            <label>Estado</label><br>
-            <input type="text" id="state" autocomplete="off"><br>
-
+              <div class="col-12">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+              </div>
             <button type="button" onclick="verificar()">Cadastrar</button><br>
         </form>
 </body>

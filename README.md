@@ -20,7 +20,9 @@
 > 👍Projeto Finalizado 👍
 
 ## 📋Descrição
-Projeto desenvolvido para disciplina de Programação Web I. Fizemos um Formulário de cadastro para simular o cadastro de usuários para permitir acesso a um site específico
+Projeto desenvolvido para disciplina de Programação Web I. Fizemos um Formulário de cadastro para simular o cadastro de usuários para permitir acesso a um site específico.
+Em atualização estamos pesquisando sites para encontrar divergências e similaridades para agregar ao nosso formulário. Acrecentamos mais campos para cadastro de endereço com base na atividade realizada anteriormente (clique aqui para ver [https://github.com/hiseamorim/projeto-CadEndereco]).
+
 
 ## 🔧 Funcionalidades
 - `Funcionalidade 1`: Permite que o usuário coloque suas informações
