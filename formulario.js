@@ -1,4 +1,5 @@
 //Código de validação de formulário de Cadastro
+'use restrict'; //Modo restrito
 
 function verificar() {
 
@@ -14,12 +15,12 @@ function verificar() {
     let numero = document.getElementById('numero').value;
     let cep = document.getElementById('cep').value;
     let complemento = document.getElementById('complemento').value;
-    let bairro = document.getElementById('uf').value;
+    let bairro = document.getElementById('bairro').value;
     let cidade = document.getElementById('cidade').value;
-    let estado = document.getElementById('"estado').value;
+    let estado = document.getElementById('estado').value;
     
 
-    if (!nome || !fone|| !datadeNascimento || !cpf || !email || !senha || !endereco || !numero || !cep  || !complemento || !bairro || !cidade || !estado || !confirmeSenha) {
+    if (!nome || !fone|| !datadeNascimento || !cpf || !email || !senha || !endereco || !numero || !cep  || !complemento || !bairro || !cidade || !estado || !confirmeSenha || !confirmaEmail) {
         alert("Por favor preencher todos os campos corretamente");
     }
     else{
@@ -27,11 +28,10 @@ function verificar() {
     }
 }
 
-'use restrict'; //Modo restrito
 
 //Limpar formulário
-const limparFormulário = (endereco) =>{
-    document.getElementById('rua').value = '';
+const limparFormulario = () =>{
+    document.getElementById('endereco').value = '';
     document.getElementById('bairro').value = '';
     document.getElementById('cidade').value = '';
     document.getElementById('estado').value = '';
@@ -44,20 +44,15 @@ const cepValido = (cep) => cep.length == 8 && eNumero(cep);
 //Preenche campos do formulário
 
 const preencherformulario = (endereco) =>{
-    document.getElementById('rua').value = endereco.logradouro;
+    document.getElementById('endereco').value = endereco.logradouro;
     document.getElementById('bairro').value = endereco.bairro;
     document.getElementById('cidade').value = endereco.localidade;
     document.getElementById('estado').value =endereco.uf;
 }
-/*
-
- // Função para consumo de API 
- utilizando a função do tipo assincronica 
- */
 
 const pesquisarcep = async() =>{
-    limparFormulário();
-    const url = `http://viacep.com.br/ws/${cep.value}/json/`;
+    limparFormulario();
+    const url = `https://viacep.com.br/ws/${cep.value}/json/`;
 
     if(cepValido(cep.value)){
         const dados = await fetch(url);
